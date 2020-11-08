@@ -3,35 +3,99 @@
 
 <head>
   <title>세계교회사 - Welcome</title>
-  <meta charset="utf-8"
+  <meta charset="utf-8">
+  <style>
+    body {
+      margin: 0;
+    }
+
+    a {
+      color: black;
+      text-decoration: none;
+    }
+
+    h1 {
+      font-size: 40px;
+      text-align: center;
+      border-bottom: 1px solid gray;
+      margin: 0;
+      padding: 20px;
+    }
+
+    ol {
+      border-right: 1px solid gray;
+      width: 220px;
+      margin: 0;
+      padding: 20px;
+
+    }
+
+    #grid {
+      display: grid;
+      grid-template-columns: 280px 1fr
+    }
+
+    #grid ol {
+      padding-left: 33px;
+    }
+
+    #grid #article {
+      padding-left: 25px;
+    }
+
+    @media(max-width:800px) {
+      #grid {
+        display: block;
+      }
+
+      ol {
+        border-right: none;
+      }
+
+      h1 {
+        border-bottom: none;
+      }
+    }
+  </style>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-9BSP3WZHTF"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
     gtag('js', new Date());
 
     gtag('config', 'G-9BSP3WZHTF');
   </script>
- </head>
+</head>
 
 <body>
   <h1><a href="index.html">세계교회사</a></h1>
-  <ol>
-    <li><a href="1.html">왜 교회사를 공부해야 하는가?</a></li>
-    <li><a href="2.html">초대교회사</a></li>
-    <li><a href="3.html">중세교회사</a></li>
-    <li><a href="4.html">종교개혁사</a></li>
-    <li><a href="5.html">현대교회사</a></li>
-    <li><a href="6.html">한국교회사</a></li>
-  </ol>
-  <h2>현대교회사</h2>
-  <p>
-    Im 16. Jahrhundert breitete sich das Christentum durch die Mönchsorden, die den spanischen und portugiesischen Entdeckern folgten, in Lateinamerika und entlang den Küsten von Afrika und Asien weiter aus als je zuvor. Dieser katholischen Verbreitung folgte im 17. und 18. Jahrhundert eine ähnliche weltweite Verbreitung des Protestantismus durch die Holländer und Engländer und durch Auswanderer, die protestantischen Minderheitskonfessionen angehörten. Die russisch-orthodoxe Kirche expandierte nach Nordasien, insbesondere Sibirien und Japan.
+  <div id="grid">
+    <ol>
+      <li><a href="1.html">왜 교회사를 공부해야 하는가?</a></li>
+      <li><a href="2.html">초대교회사</a></li>
+      <li><a href="3.html">중세교회사</a></li>
+      <li><a href="4.html">종교개혁사</a></li>
+      <li><a href="5.html">현대교회사</a></li>
+      <li><a href="6.html">한국교회사</a></li>
+    </ol>
+    <div id="article">
+      <h2>현대교회사</h2>
+      <p>
+        Im 16. Jahrhundert breitete sich das Christentum durch die Mönchsorden, die den spanischen und portugiesischen Entdeckern folgten, in Lateinamerika und entlang den Küsten von Afrika und Asien weiter aus als je zuvor. Dieser katholischen
+        Verbreitung folgte im 17. und 18. Jahrhundert eine ähnliche weltweite Verbreitung des Protestantismus durch die Holländer und Engländer und durch Auswanderer, die protestantischen Minderheitskonfessionen angehörten. Die russisch-orthodoxe
+        Kirche expandierte nach Nordasien, insbesondere Sibirien und Japan.
 
-    Im 19. Jahrhundert verbreitete sich der Protestantismus in ganz Nordamerika, war die dominierende Religion in Australien, expandierte in Lateinamerika und hatte Missionen in fast jedem afrikanischen und asiatischen Land.
+        Im 19. Jahrhundert verbreitete sich der Protestantismus in ganz Nordamerika, war die dominierende Religion in Australien, expandierte in Lateinamerika und hatte Missionen in fast jedem afrikanischen und asiatischen Land.
 
-    Im 20. Jahrhundert verlegte sich der Schwerpunkt des Christentums erneut. Kernlande der protestantischen Kirchen waren jetzt die Vereinigten Staaten. Um 1965 waren die Christen hälftig auf westliche und nichtwestliche Länder verteilt, und in den folgenden Jahrzehnten wurden die Christen der Dritten Welt zur Mehrheit. Besonderen Aufschwung hatten dort neue, lokale Kirchen der charismatischen Richtung – nicht die traditionellen Kirchen.
+        Im 20. Jahrhundert verlegte sich der Schwerpunkt des Christentums erneut. Kernlande der protestantischen Kirchen waren jetzt die Vereinigten Staaten. Um 1965 waren die Christen hälftig auf westliche und nichtwestliche Länder verteilt, und in
+        den folgenden Jahrzehnten wurden die Christen der Dritten Welt zur Mehrheit. Besonderen Aufschwung hatten dort neue, lokale Kirchen der charismatischen Richtung – nicht die traditionellen Kirchen.
+      </p>
+    </div>
+  </div>
   <p>
   <div id="lv-container" data-id="city" data-uid="MTAyMC81MTkyOC8yODQwOQ==">
     <script type="text/javascript">
