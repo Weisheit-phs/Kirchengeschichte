@@ -4,6 +4,7 @@
 <head>
   <title>세계교회사 - Welcome</title>
   <meta charset="utf-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <style>
     body {
       margin: 0;
@@ -57,18 +58,10 @@
       }
     }
   </style>
+  <script src='colors.js'></script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-9BSP3WZHTF"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-
-    gtag('config', 'G-9BSP3WZHTF');
-  </script>
+  <script src="async.js"></script>
 </head>
 
 <body>
@@ -94,6 +87,9 @@
         Im 20. Jahrhundert verlegte sich der Schwerpunkt des Christentums erneut. Kernlande der protestantischen Kirchen waren jetzt die Vereinigten Staaten. Um 1965 waren die Christen hälftig auf westliche und nichtwestliche Länder verteilt, und in
         den folgenden Jahrzehnten wurden die Christen der Dritten Welt zur Mehrheit. Besonderen Aufschwung hatten dort neue, lokale Kirchen der charismatischen Richtung – nicht die traditionellen Kirchen.
       </p>
+      <input id="night_day" type="button" value="night" onclick="
+        nightDayHandler(this);
+      ">
     </div>
   </div>
   <p>

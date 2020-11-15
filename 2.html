@@ -4,6 +4,7 @@
 <head>
   <title>세계교회사</title>
   <meta charset="utf-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <style>
     body {
       margin: 0;
@@ -42,30 +43,25 @@
     #grid #article {
       padding-left: 25px;
     }
-      @media(max-width:800px){
-        #grid {
-          display: block;
-        }
-        ol {
-          border-right: none;
-        }
-        h1 {
-          border-bottom: none;
-        }
+
+    @media(max-width:800px) {
+      #grid {
+        display: block;
       }
+
+      ol {
+        border-right: none;
+      }
+
+      h1 {
+        border-bottom: none;
+      }
+    }
   </style>
+  <script src='colors.js'></script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-9BSP3WZHTF"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-
-    gtag('config', 'G-9BSP3WZHTF');
-  </script>
+  <script src="async.js"></script>
 </head>
 
 <body>
@@ -99,6 +95,9 @@
 
         Ebenso entstanden in dieser Zeit die Briefe, Evangelien und übrigen Schriften des Neuen Testaments und kamen nach und nach in den liturgischen Gebrauch, parallel zu den von Anfang an verwendeten Schriften des Alten Testaments.
       </p>
+      <input id="night_day" type="button" value="night" onclick="
+        nightDayHandler(this);
+      ">
     </div>
   </div>
   <p>

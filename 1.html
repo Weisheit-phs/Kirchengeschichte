@@ -4,14 +4,17 @@
 <head>
   <title>세계교회사</title>
   <meta charset="utf-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <style>
     body {
       margin: 0;
     }
+
     a {
       color: black;
       text-decoration: none;
     }
+
     h1 {
       font-size: 40px;
       text-align: center;
@@ -19,30 +22,37 @@
       margin: 0;
       padding: 20px;
     }
+
     ol {
       border-right: 1px solid gray;
       width: 220px;
       margin: 0;
       padding: 20px;
     }
+
     #article ol {
       border-right: none;
       width: auto;
       padding: 10px;
     }
+
     #grid {
       display: grid;
       grid-template-columns: 280px 1fr
     }
+
     #grid ol {
       padding-left: 33px;
     }
+
     #article {
       padding-left: 25px;
     }
+
     #article1 {
       padding-left: 25px;
     }
+
     #article1 ol {
       padding-left: 33px;
     }
@@ -61,18 +71,10 @@
       }
     }
   </style>
+  <script src='colors.js'></script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-9BSP3WZHTF"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-
-    gtag('config', 'G-9BSP3WZHTF');
-  </script>
+  <script src="async.js"></script>
 </head>
 
 <body>
@@ -90,59 +92,62 @@
       <h2>왜 교회사를 공부해야 하는가?</h2>
       <p>Warum Kirchengeschichte für uns wichtig ist…
       <div id="article1">
-      <ol>
-        <li>Der christliche Glaube wurde von (gläubigen) Menschen mündlich und schriftlich überliefert. Damit hat das Christentum JEDER Konfession oder Freikirche eine (gemeinsame) Geschichte (wenn auch nicht in allen Teilen). Auch die Bibel „fiel
-          nicht
-          vom Himmel“, sondern wurde von „unseren Vätern“ an uns weitergegeben.</li>
-        <li>Wir hängen – ob wir wollen oder nicht – vom Glauben unserer Vorfahren ab. Der Kanon (Umfang der anerkannten Schriften) des Neuen Testaments ist z.B. nicht von einem Engel Gottes oder so, sondern von den Kirchenvätern festgelegt worden
-          (ca.
-          4Jh. n.Chr.). So lebten die Christen der ersten Jahrhunderte ohne einheitliches Neues Testament!</li>
-        <li>Die Kirchengeschichte enthält nicht nur negative Beispiele, sondern auch positive. Zudem kann sie uns eine Menge über unseren Glauben lehren und wie man die gleichen Fehler nicht ständig wiederholt.</li>
-        <li>Ohne die Kirchengeschichte einigermaßen zu kennen, wird uns Vieles in unserem Glauben (und dem anderer christlicher Glaubensgemeinschaften) unverständlich bleiben. Letztendlich kann dies die Einheit der Christen unnötig verhindern bzw.
-          erschweren.</li>
-        <li>Der Schatz an geistlichen Erkenntnissen der Kirche (ja den gibt’s!) geht uns verloren, wenn wir die Schriften unserer Glaubensväter ablehnen bzw. nicht lesen. Es ist m.E. eine ziemliche Arroganz (der ich leider aus Unkenntnis auch
-          verfallen
-          war) behaupten zu wollen, dass wir heute alles besser wüssten als unsere Glaubensväter (auch wenn diese natürlich nicht unfehlbar waren).</li>
-      </ol>
-      </p>
+        <ol>
+          <li>Der christliche Glaube wurde von (gläubigen) Menschen mündlich und schriftlich überliefert. Damit hat das Christentum JEDER Konfession oder Freikirche eine (gemeinsame) Geschichte (wenn auch nicht in allen Teilen). Auch die Bibel „fiel
+            nicht
+            vom Himmel“, sondern wurde von „unseren Vätern“ an uns weitergegeben.</li>
+          <li>Wir hängen – ob wir wollen oder nicht – vom Glauben unserer Vorfahren ab. Der Kanon (Umfang der anerkannten Schriften) des Neuen Testaments ist z.B. nicht von einem Engel Gottes oder so, sondern von den Kirchenvätern festgelegt worden
+            (ca.
+            4Jh. n.Chr.). So lebten die Christen der ersten Jahrhunderte ohne einheitliches Neues Testament!</li>
+          <li>Die Kirchengeschichte enthält nicht nur negative Beispiele, sondern auch positive. Zudem kann sie uns eine Menge über unseren Glauben lehren und wie man die gleichen Fehler nicht ständig wiederholt.</li>
+          <li>Ohne die Kirchengeschichte einigermaßen zu kennen, wird uns Vieles in unserem Glauben (und dem anderer christlicher Glaubensgemeinschaften) unverständlich bleiben. Letztendlich kann dies die Einheit der Christen unnötig verhindern bzw.
+            erschweren.</li>
+          <li>Der Schatz an geistlichen Erkenntnissen der Kirche (ja den gibt’s!) geht uns verloren, wenn wir die Schriften unserer Glaubensväter ablehnen bzw. nicht lesen. Es ist m.E. eine ziemliche Arroganz (der ich leider aus Unkenntnis auch
+            verfallen
+            war) behaupten zu wollen, dass wir heute alles besser wüssten als unsere Glaubensväter (auch wenn diese natürlich nicht unfehlbar waren).</li>
+        </ol>
+        </p>
+        <input id="night_day" type="button" value="night" onclick="
+        nightDayHandler(this);
+      ">
+      </div>
     </div>
-    <p>
-    <div id="lv-container" data-id="city" data-uid="MTAyMC81MTkyOC8yODQwOQ==">
-      <script type="text/javascript">
-        (function(d, s) {
-          var j, e = d.getElementsByTagName(s)[0];
-
-          if (typeof LivereTower === 'function') {
-            return;
-          }
-
-          j = d.createElement(s);
-          j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
-          j.async = true;
-
-          e.parentNode.insertBefore(j, e);
-        })(document, 'script');
-      </script>
-      <noscript> 라이브리 댓글 작성을 위해 JavaScript를 활성화 해주세요</noscript>
-    </div>
-    </p>
-    <!--Start of Tawk.to Script-->
+  </div>
+  <p>
+  <div id="lv-container" data-id="city" data-uid="MTAyMC81MTkyOC8yODQwOQ==">
     <script type="text/javascript">
-      var Tawk_API = Tawk_API || {},
-        Tawk_LoadStart = new Date();
-      (function() {
-        var s1 = document.createElement("script"),
-          s0 = document.getElementsByTagName("script")[0];
-        s1.async = true;
-        s1.src = 'https://embed.tawk.to/5fa68cef0a68960861bc9c6a/default';
-        s1.charset = 'UTF-8';
-        s1.setAttribute('crossorigin', '*');
-        s0.parentNode.insertBefore(s1, s0);
-      })();
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+
+        if (typeof LivereTower === 'function') {
+          return;
+        }
+
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
     </script>
-    <!--End of Tawk.to Script-->
+    <noscript> 라이브리 댓글 작성을 위해 JavaScript를 활성화 해주세요</noscript>
   </div>
-  </div>
+  </p>
+  <!--Start of Tawk.to Script-->
+  <script type="text/javascript">
+    var Tawk_API = Tawk_API || {},
+      Tawk_LoadStart = new Date();
+    (function() {
+      var s1 = document.createElement("script"),
+        s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = 'https://embed.tawk.to/5fa68cef0a68960861bc9c6a/default';
+      s1.charset = 'UTF-8';
+      s1.setAttribute('crossorigin', '*');
+      s0.parentNode.insertBefore(s1, s0);
+    })();
+  </script>
+  <!--End of Tawk.to Script-->
 </body>
 
 </html>
